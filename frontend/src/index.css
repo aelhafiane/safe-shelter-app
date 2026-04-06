@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #020617;
+  color: #e2e8f0;
+  font-family: Sora, 'IBM Plex Sans', 'Segoe UI', sans-serif;
+}
+
+.leaflet-container {
+  font-family: inherit;
+}
+
+
+/* Animation dyal l-Transport Logistique f l-Kharita */
+.animate-ant-path {
+  animation: antPath 2s linear infinite;
+}
+
+@keyframes antPath {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
